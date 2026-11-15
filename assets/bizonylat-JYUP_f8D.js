@@ -1,4 +1,4 @@
-import{a as e,d as t,i as n,l as r}from"./layout-DN6UJXbo.js";import{i}from"./slots-CNfQrQPd.js";var a=document.getElementById(`doc`),o=r(`getReceipt`),s={cash:`Készpénz`,card:`Bankkártya`,transfer:`Átutalás`};async function c(r){try{let t=await o({token:r}),c=(t,n)=>`<tr><td class="muted">${t}</td><td style="text-align:right" class="muted">− ${e(n)}</td></tr>`;a.innerHTML=`
+import{a as e,d as t,i as n,l as r}from"./layout-D2YvMMEV.js";import{i}from"./slots-CaWscRKC.js";var a=document.getElementById(`doc`),o=r(`getReceipt`),s={cash:`Készpénz`,card:`Bankkártya`,transfer:`Átutalás`};async function c(r){try{let t=await o({token:r}),c=(t,n)=>`<tr><td class="muted">${t}</td><td style="text-align:right" class="muted">− ${e(n)}</td></tr>`;a.innerHTML=`
       <div class="card narrow receipt" style="max-width:620px">
         <div style="display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap">
           <div>
