@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Disallow: /fiokom/
+Sitemap: https://jumera.hu/sitemap.xml
