@@ -1,4 +1,4 @@
-import{a as e,i as t,n,r}from"./layout-BIVeb49R.js";e(e=>{let i=document.getElementById(`prices`);if(!e.length){i.innerHTML=`<p class="muted center">Az árlista hamarosan elérhető.</p>`;return}let a=new Map;e.forEach(e=>{let t=e.category||`Szolgáltatások`;a.set(t,[...a.get(t)??[],e])}),i.innerHTML=[...a.entries()].map(([e,i])=>`
+import{a as e,i as t,n,r}from"./layout-YiSyq4dx.js";e(e=>{let i=document.getElementById(`prices`);if(!e.length){i.innerHTML=`<p class="muted center">Az árlista hamarosan elérhető.</p>`;return}let a=new Map;e.forEach(e=>{let t=e.category||`Szolgáltatások`;a.set(t,[...a.get(t)??[],e])}),i.innerHTML=[...a.entries()].map(([e,i])=>`
     <div class="price-cat">
       <h3>${r(e)}</h3>
       ${i.map(e=>`
