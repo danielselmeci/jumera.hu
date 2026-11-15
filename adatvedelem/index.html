@@ -3,14 +3,17 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Angol nyelvnél a tartalom a fordításig rejtve marad, hogy ne villanjon fel a magyar szöveg (src/i18n.ts) -->
+  <style>.i18n-pending body{visibility:hidden}</style>
+  <script>try{var q=new URLSearchParams(location.search).get("lang"),s=null;try{s=localStorage.getItem("lang")}catch(e){}var l=q||s||(/^hu/i.test(navigator.language||"hu")?"hu":"en");if(l==="en"){document.documentElement.classList.add("i18n-pending");setTimeout(function(){document.documentElement.classList.remove("i18n-pending")},2500)}}catch(e){}</script>
   <title>Adatkezelési tájékoztató – Juméra</title>
   <meta name="description" content="Hogyan kezeli a Juméra a személyes adataidat.">
   <meta name="theme-color" content="#190a1f">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-  <script type="module" crossorigin src="/assets/layout-Dagca8y_.js"></script>
-  <script type="module" crossorigin src="/assets/legal-DDJG_Wiz.js"></script>
-  <link rel="stylesheet" crossorigin href="/assets/layout-CJr4s8NQ.css">
+  <script type="module" crossorigin src="/assets/layout-DN6UJXbo.js"></script>
+  <script type="module" crossorigin src="/assets/legal-Dzo23l7u.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/layout-CcBf3g8_.css">
 </head>
 <body>
   <header id="site-header"></header>
@@ -42,15 +45,26 @@
           <tr><td>Apple Wallet kártya automatikus frissítése</td><td>Wallet eszközazonosító és push token (Apple által generált, név nélkül)</td><td>szerződés teljesítése – 6. cikk (1) b)</td><td>amíg a kártya a Walletben van</td></tr>
           <tr><td>Értesítések a foglalásodról és a pecsétjeidről</td><td>értesítési (push) token, értesítések szövege</td><td>szerződés teljesítése – 6. cikk (1) b)</td><td>a fiók törléséig; a pusht a telefon beállításaiban bármikor kikapcsolhatod</td></tr>
           <tr><td>Akciók, újdonságok (marketing értesítés)</td><td>név, push token, hozzájárulás időpontja</td><td>hozzájárulás – 6. cikk (1) a), Grt. 6. §</td><td>a hozzájárulás visszavonásáig (Fiókom → Profil)</td></tr>
+          <tr><td>Pilla-karton (a kezeléshez használt stílus, ív, hosszak, ragasztó, jegyzetek)</td><td>a kezelés szakmai adatai, alkalmak időpontja</td><td>szerződés teljesítése – 6. cikk (1) b)</td><td>a fiók törléséig, legfeljebb az utolsó látogatást követő 3 évig</td></tr>
+          <tr><td>Allergia, érzékenység, bőrpróba a pilla-kartonon</td><td>egészségügyi adat</td><td>kifejezett, írásbeli hozzájárulás – 9. cikk (2) a)</td><td>a hozzájárulás visszavonásáig vagy a fiók törléséig</td></tr>
+          <tr><td>Előtte/utána fotók a kezelésről</td><td>a szemkörnyékről készült fénykép</td><td>dokumentációhoz: hozzájárulás – 6. cikk (1) a); közzétételhez (pl. Instagram) külön hozzájárulás, Ptk. 2:48. §</td><td>a hozzájárulás visszavonásáig vagy a fiók törléséig; közzétett képet kérésre eltávolítunk</td></tr>
+          <tr><td>Várólista</td><td>név, telefonszám, kért nap és szolgáltatás</td><td>a kérésedre, szerződés előkészítése – 6. cikk (1) b)</td><td>a kért nap elteltéig vagy leiratkozásig</td></tr>
+          <tr><td>Töltés-emlékeztető</td><td>legutóbbi kezelés időpontja, push token, hozzájárulás időpontja</td><td>hozzájárulás – 6. cikk (1) a), Grt. 6. §</td><td>a hozzájárulás visszavonásáig (Fiókom → Profil, vagy az appban: Értesítések)</td></tr>
+          <tr><td>Ajándékutalvány</td><td>a vásárló neve és elérhetősége, a megajándékozott neve, üzenet, egyenleg, beváltások</td><td>szerződés teljesítése – 6. cikk (1) b)</td><td>az utalvány lejáratát követő 5 évig (Ptk. elévülés)</td></tr>
+          <tr><td>Fizetési bizonylat küldése</td><td>név, e-mail cím vagy telefonszám, számlázási cím, tételek, összeg, fizetési mód</td><td>szerződés teljesítése – 6. cikk (1) b); számla esetén jogi kötelezettség – 6. cikk (1) c)</td><td>8 év (Számviteli tv. 169. §); fióktörléskor az elérhetőségeid törlődnek</td></tr>
+          <tr><td>Online foglaló (ha be van kapcsolva)</td><td>foglalás azonosítója, összeg, a fizetés állapota és azonosítója</td><td>szerződés teljesítése – 6. cikk (1) b)</td><td>8 év (Számviteli tv. 169. §)</td></tr>
+          <tr><td>Megbízhatóság (meg nem jelenések száma)</td><td>az előzetes lemondás nélkül elmaradt időpontok száma</td><td>jogos érdek – 6. cikk (1) f): az időpontok elvesztegetésének megelőzése</td><td>a fiók törléséig</td></tr>
           <tr><td>Panaszkezelés</td><td>név, elérhetőség, panasz tartalma</td><td>jogi kötelezettség – 6. cikk (1) c), Fgytv. 17/A. §</td><td>5 év</td></tr>
         </table>
-        <p>Online fizetés nincs, bankkártyaadatot nem kezelünk. A kiállított számlákat a számvitelről szóló 2000. évi C. törvény 169. §-a alapján 8 évig őrizzük meg.</p>
+        <p>Bankkártyaadatot nem kezelünk. Ha az online foglaló be van kapcsolva, a fizetés a Barion fizetési oldalán történik, a kártyaadatokat kizárólag a Barion kezeli. A kiállított számlákat a számvitelről szóló 2000. évi C. törvény 169. §-a alapján 8 évig őrizzük meg.</p>
 
         <h2>3. Kik férnek hozzá az adatokhoz? (adatfeldolgozók)</h2>
         <table>
           <tr><th>Adatfeldolgozó</th><th>Feladat</th></tr>
           <tr><td>Google Ireland Limited (Firebase) – Gordon House, Barrow Street, Dublin 4, Írország</td><td>fiókok, foglalások, hűségkártya tárolása (Frankfurt, EU); push értesítések kézbesítése (Firebase Cloud Messaging)</td></tr>
           <tr><td>Apple Distribution International Ltd. – Hollyhill Industrial Estate, Cork, Írország</td><td>az app terjesztése, push értesítések és Apple Wallet frissítések kézbesítése</td></tr>
+          <tr><td>Google Ireland Limited (Firebase Storage)</td><td>a pilla-karton fotóinak tárolása (Frankfurt, EU); kizárólag a stúdió fér hozzá</td></tr>
+          <tr><td>Barion Payment Zrt. – <span class="placeholder">[cím ellenőrzése: 1117 Budapest, Irinyi József u. 4–20.]</span></td><td>az online foglaló fizetése (csak ha be van kapcsolva); a fizetési adatok tekintetében önálló adatkezelő</td></tr>
           <tr><td>GitHub, Inc. – San Francisco, USA</td><td>a weboldal tárhelye (a szerver naplóz IP-címet a kiszolgáláshoz)</td></tr>
         </table>
         <p>Az USA-ba irányuló esetleges adattovábbítás az EU–USA adatvédelmi keretrendszer (Data Privacy Framework) megfelelőségi határozata, illetve általános szerződési feltételek alapján történik. Adataidat nem adjuk el, és harmadik félnek reklámcélra nem adjuk át.</p>

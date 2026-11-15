@@ -3,6 +3,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Angol nyelvnél a tartalom a fordításig rejtve marad, hogy ne villanjon fel a magyar szöveg (src/i18n.ts) -->
+  <style>.i18n-pending body{visibility:hidden}</style>
+  <script>try{var q=new URLSearchParams(location.search).get("lang"),s=null;try{s=localStorage.getItem("lang")}catch(e){}var l=q||s||(/^hu/i.test(navigator.language||"hu")?"hu":"en");if(l==="en"){document.documentElement.classList.add("i18n-pending");setTimeout(function(){document.documentElement.classList.remove("i18n-pending")},2500)}}catch(e){}</script>
   <title>Fiókom – Juméra</title>
   <meta name="description" content="Foglalásaid, hűségkártyád és értesítéseid.">
   <meta name="robots" content="noindex">
@@ -14,10 +17,12 @@
   <meta name="apple-itunes-app" content="app-id=0000000000">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-  <script type="module" crossorigin src="/assets/fiokom-mt9Ir7s6.js"></script>
-  <link rel="modulepreload" crossorigin href="/assets/layout-Dagca8y_.js">
-  <link rel="modulepreload" crossorigin href="/assets/calendar-Dt8qVDX2.js">
-  <link rel="stylesheet" crossorigin href="/assets/layout-CJr4s8NQ.css">
+  <script type="module" crossorigin src="/assets/fiokom-hKALWJG9.js"></script>
+  <link rel="modulepreload" crossorigin href="/assets/layout-DN6UJXbo.js">
+  <link rel="modulepreload" crossorigin href="/assets/browser-DwDA2okr.js">
+  <link rel="modulepreload" crossorigin href="/assets/slots-CNfQrQPd.js">
+  <link rel="modulepreload" crossorigin href="/assets/calendar-BUmGmD6N.js">
+  <link rel="stylesheet" crossorigin href="/assets/layout-CcBf3g8_.css">
 </head>
 <body>
   <header id="site-header"></header>
